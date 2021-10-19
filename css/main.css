@@ -1,0 +1,120 @@
+/*end variable*/
+
+/*Start Global Rules*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+.container {
+    margin: 0 auto 0;
+}
+/*small*/
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/*meduim*/
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*large*/
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*End Global Rules*/
+/*start header*/
+header {
+    padding: 80px 40px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;  
+}
+header .content {
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    padding: 60px;
+    float: left;
+    width: 50%;
+}
+header .images {
+    float: right;
+    width: 50%;
+    position: relative;
+    margin: 0;
+}
+header .images img {
+    width: 100%;
+}
+header .images .overlay {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 99%;
+    width: 100%;
+    background-color: hsl(277, 64%, 61%);
+}
+@media (max-width:800px) {
+    header .container {
+       flex-direction: column;
+    }
+    header .container .content {
+        order: 2;
+        width: 100%;
+    }
+    header .images {
+        width: 100%;
+    }
+    header .images img {
+        border-radius: 15px 15px 0 0;
+    }
+}
+header .content h2 {
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+@media (max-width:800px) {
+    header .content {
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 0 0 15px 15px;
+    }
+    header .content h2 {
+        font-size: 25px;
+    }
+}
+header .content h2 span {
+    color: hsl(277, 64%, 61%)
+}
+header .content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+header .content div {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+} 
+header .content div span p {
+    font-size: 12px;
+    margin-top: 7px;
+}
+/*end header*/
